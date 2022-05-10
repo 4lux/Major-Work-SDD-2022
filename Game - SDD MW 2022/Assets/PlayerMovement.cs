@@ -21,17 +21,6 @@ public class PlayerMovement : MonoBehaviour
       animator.SetFloat("Horizontal", movement.x);
       animator.SetFloat("Vertical", movement.y);
       animator.SetFloat("Speed", movement.sqrMagnitude);
-
-/*
-      if (((Input.GetAxisRaw("Horizontal"))^2 + (Input.GetAxisRaw("Vertical"))^2) == 2){
-        moveSpeed = 2.12132f;
-      }
-
-      else
-      {
-        moveSpeed = 3f;
-      }
-*/
     }
 
     void FixedUpdate()
