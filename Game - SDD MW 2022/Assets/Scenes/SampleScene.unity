@@ -696,6 +696,7 @@ GameObject:
   m_Component:
   - component: {fileID: 781008310}
   - component: {fileID: 781008309}
+  - component: {fileID: 781008311}
   m_Layer: 0
   m_Name: Flashlight
   m_TagString: Untagged
@@ -796,6 +797,19 @@ Transform:
   m_Father: {fileID: 1655652266}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &781008311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 781008308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 190ce30ed7a5c044ba39cc8275506beb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fl: {fileID: 781008309}
 --- !u!1 &1288928036
 GameObject:
   m_ObjectHideFlags: 3
