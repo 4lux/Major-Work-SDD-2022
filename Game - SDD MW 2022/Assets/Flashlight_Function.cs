@@ -6,7 +6,7 @@ public class Flashlight_Function : MonoBehaviour
 {
     public UnityEngine.Rendering.Universal.Light2D fl;
     private bool status = true;
-    void FixedUpdate()
+    void Update()
     {
         if (status == true){
           if (Input.GetMouseButtonDown(0))
