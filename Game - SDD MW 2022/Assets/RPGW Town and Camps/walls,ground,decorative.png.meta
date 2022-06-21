@@ -1,9 +1,9 @@
 fileFormatVersion: 2
 guid: ea63494ca366af3489c0b390aaec7796
 TextureImporter:
-  fileIDToRecycleName: {}
+  internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 9
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -23,6 +23,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -32,15 +34,15 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -54,11 +56,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
   platformSettings:
-  - serializedVersion: 2
+  - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -69,7 +75,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -80,7 +87,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -91,17 +99,759 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: walls,ground,decorative_0
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 800
+        width: 170
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4d612cf512e13f43a40464f2bd1668f
+      internalID: -1260355505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walls,ground,decorative_1
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 800
+        width: 170
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 944f303df53229d478a2dc8944364343
+      internalID: -1775130523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walls,ground,decorative_2
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 758
+        width: 74
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c5afe71d5bfdb8498a9b751aec82614
+      internalID: 663659378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walls,ground,decorative_3
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 758
+        width: 74
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b93be6b00f9915a4ea6cbcdea0f01be8
+      internalID: -1210450973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walls,ground,decorative_4
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 576
+        width: 118
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12abf98476aab394a8aaf86ff6088b61
+      internalID: 760742599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walls,ground,decorative_5
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 896
+        width: 96
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45d063ba1053cb4478a6529d1a3deafa
+      internalID: 1101954415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walls,ground,decorative_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 800
+        width: 64
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04c3732045e688b448e05a10ef48843e
+      internalID: -663190402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walls,ground,decorative_7
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 800
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af66ba98b89e8de4d9c8972f6b5fcb0a
+      internalID: -1696605906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walls,ground,decorative_8
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 672
+        width: 52
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00968efbb1da66540bc29024b59ebd32
+      internalID: 1361534072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walls,ground,decorative_9
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 502
+        width: 74
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ed8b8033f168244996955aef4a9fb1f
+      internalID: -1801259275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walls,ground,decorative_10
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 502
+        width: 74
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cd646550bed39b488fca52f8a36db3f
+      internalID: -524154193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walls,ground,decorative_11
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 672
+        width: 52
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afecb8d152a042b4ca3236b7d666e88d
+      internalID: -1805636298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walls,ground,decorative_12
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 534
+        width: 106
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 170919d8c0fb8504c9d31bc5d276da23
+      internalID: -771378368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walls,ground,decorative_13
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 704
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 716f31b2ce37d4f41b46ff9229695f90
+      internalID: 1232127280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walls,ground,decorative_14
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 534
+        width: 106
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3b20b88a04ec534697f0c34a6915d3e
+      internalID: -947945465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walls,ground,decorative_15
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 640
+        width: 64
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c20b8cf13c8a71f4c94c568ae2ba1406
+      internalID: -1844272499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walls,ground,decorative_16
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 310
+        width: 436
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cb93cd0e7c49e240b985d0fdf85552a
+      internalID: 213884422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walls,ground,decorative_17
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 320
+        width: 544
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 144bf058b84054c479d2efe4ca5c53c1
+      internalID: -1008745879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walls,ground,decorative_18
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 216
+        width: 73
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 890a5e0d4935a0c4db69038f1b4d50b7
+      internalID: 1837907644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walls,ground,decorative_19
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 216
+        width: 73
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ecbfde4b83b769439554d9834b23108
+      internalID: -319239662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walls,ground,decorative_20
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 160
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab905ec3d6e14a04bbb924604459caa9
+      internalID: 1590087116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walls,ground,decorative_21
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 128
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 578b9a375d4137244990badaeaff0414
+      internalID: 1993774190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walls,ground,decorative_22
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 128
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8e5c889e5f07f9428af729e21d9a431
+      internalID: -1500343216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walls,ground,decorative_23
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 128
+        width: 64
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d2e4eca7f8b16244831de73c290a578
+      internalID: 1367033050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walls,ground,decorative_24
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 73
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a547fdea28a2af4580614dfab456204
+      internalID: 102380129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walls,ground,decorative_25
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 96
+        width: 73
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01d3581bd501e634a84110bdaa47b402
+      internalID: -60204563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walls,ground,decorative_26
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 32
+        width: 73
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f464fd81b5aedd438b89c43c03fce4f
+      internalID: -948649856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walls,ground,decorative_27
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 32
+        width: 73
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e17bc7cecc40f041bf6c7b6265d5296
+      internalID: -1160176347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walls,ground,decorative_28
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 64
+        width: 39
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e29b9b25d468e42478db0c2fb5e4814e
+      internalID: 1203030051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walls,ground,decorative_29
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 8
+        width: 64
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6debd0ab1649fe444bd7b131936ab738
+      internalID: -1533193374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walls,ground,decorative_30
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 9
+        width: 50
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ad9b8877d3e49641b8aa35cd4fdc464
+      internalID: -1298549234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walls,ground,decorative_31
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25552d3c03bc2484ab97dfb21416a6ad
+      internalID: -2046677879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walls,ground,decorative_32
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 0
+        width: 55
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25763930453a32743ab0197515e97144
+      internalID: 1446725328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
     spriteID: d9265f0a52bfcd14080a2a26b5d72d22
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      walls,ground,decorative_29: -1533193374
+      walls,ground,decorative_5: 1101954415
+      walls,ground,decorative_17: -1008745879
+      walls,ground,decorative_8: 1361534072
+      walls,ground,decorative_11: -1805636298
+      walls,ground,decorative_6: -663190402
+      walls,ground,decorative_24: 102380129
+      walls,ground,decorative_22: -1500343216
+      walls,ground,decorative_3: -1210450973
+      walls,ground,decorative_15: -1844272499
+      walls,ground,decorative_19: -319239662
+      walls,ground,decorative_16: 213884422
+      walls,ground,decorative_21: 1993774190
+      walls,ground,decorative_23: 1367033050
+      walls,ground,decorative_32: 1446725328
+      walls,ground,decorative_30: -1298549234
+      walls,ground,decorative_12: -771378368
+      walls,ground,decorative_25: -60204563
+      walls,ground,decorative_28: 1203030051
+      walls,ground,decorative_2: 663659378
+      walls,ground,decorative_0: -1260355505
+      walls,ground,decorative_31: -2046677879
+      walls,ground,decorative_13: 1232127280
+      walls,ground,decorative_9: -1801259275
+      walls,ground,decorative_18: 1837907644
+      walls,ground,decorative_27: -1160176347
+      walls,ground,decorative_20: 1590087116
+      walls,ground,decorative_10: -524154193
+      walls,ground,decorative_14: -947945465
+      walls,ground,decorative_4: 760742599
+      walls,ground,decorative_7: -1696605906
+      walls,ground,decorative_1: -1775130523
+      walls,ground,decorative_26: -948649856
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
