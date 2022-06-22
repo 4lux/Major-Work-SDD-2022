@@ -8,7 +8,7 @@ public class Page_Counter : MonoBehaviour
     public static Page_Counter instance;
 
     public TextMeshProUGUI pageText;
-    int pages = 0;
+    public int pages;
 
     private void Awake()
     {
@@ -18,6 +18,7 @@ public class Page_Counter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        pages = 0;
         pageText.text = "Pages : " + pages.ToString();
     }
 

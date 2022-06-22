@@ -7,11 +7,35 @@ public class Hunter_GFX : MonoBehaviour
 {
     public AIPath aiPath;
     public Animator hunterAnimator;
+    public Page_Counter script;
+    private int stage = 1;
 
+    void Start()
+    {
+
+    }
     // Update is called once per frame
     void Update()
     {
+        stageUpdate();
+
         hunterAnimator.SetFloat("Horizontal", aiPath.desiredVelocity.x);
         hunterAnimator.SetFloat("Vertical", aiPath.desiredVelocity.y);
+        hunterAnimator.SetFloat("Speed", aiPath.desiredVelocity.sqrMagnitude);
+        hunterAnimator.SetInteger("Stage", stage);
     }
+
+    void stageUpdate()
+    {
+      if (script.pages <= 3){
+        stage = 1;
+      }
+      else if (script.pages <= 6){
+        stage = 2;
+      }
+      else {
+        stage = 3;
+      }
+    }
+
 }
