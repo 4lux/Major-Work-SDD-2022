@@ -6,6 +6,7 @@ public class Page_Behaviour : MonoBehaviour
 {
     bool col = false;
     public GameObject Paper;
+    [SerializeField] private AudioSource pturn;
 
     private void OnTriggerEnter2D(Collider2D Other)
     {
@@ -22,7 +23,7 @@ public class Page_Behaviour : MonoBehaviour
       if ((Input.GetMouseButtonDown(1)) && (col == true))
       {
         Paper.SetActive(false);
-        Debug.Log("bruh");
+        pturn.Play();
         Page_Counter.instance.AddPage();
       }
     }

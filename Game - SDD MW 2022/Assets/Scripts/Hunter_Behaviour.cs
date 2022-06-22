@@ -73,7 +73,7 @@ public class Hunter_Behaviour : MonoBehaviour
 
       Debug.Log(i);
       Debug.Log(destination.x);
-      destination.z = 0;
+      destination.z = -transform.position.z;
       woosh.Play();
       self.transform.position = destination;
     }
