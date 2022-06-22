@@ -16,10 +16,7 @@ public class Hunter_Behaviour : MonoBehaviour
     public CircleCollider2D playerCol;
     public BoxCollider2D self;
 
-    void Update()
-    {
-       transform.position.z = 0.0f;
-    }
+    [SerializeField] private AudioSource woosh;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -40,7 +37,7 @@ public class Hunter_Behaviour : MonoBehaviour
       if ((timer >= 2f) && (self.IsTouching(flashlightCol)))
       {
         //stageteleport();
-        teleport(30,50);
+        teleport(20,40);
       }
     }
 
@@ -77,10 +74,11 @@ public class Hunter_Behaviour : MonoBehaviour
       Debug.Log(i);
       Debug.Log(destination.x);
       destination.z = 0;
+      woosh.Play();
       self.transform.position = destination;
     }
 
-    void stageteleport()
+  /*/  void stageteleport()
     {
       if (Hunter_GFX.stage == 1)
       {
@@ -118,5 +116,5 @@ public class Hunter_Behaviour : MonoBehaviour
           ntps = 0;
         }
       }
-    }
+    } /*/
 }
