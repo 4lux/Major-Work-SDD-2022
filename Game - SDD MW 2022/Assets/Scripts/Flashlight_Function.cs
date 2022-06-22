@@ -17,6 +17,8 @@ public class Flashlight_Function : MonoBehaviour
 
     void Update()
     {
+      if(!Pause_Menu.isPaused)
+      {
         if (script.flLevel != 3)
         {
           flashSwitch();
@@ -25,7 +27,7 @@ public class Flashlight_Function : MonoBehaviour
         {
           flashVariables(false);
         }
-
+      }
     }
 
     void flashSwitch()
