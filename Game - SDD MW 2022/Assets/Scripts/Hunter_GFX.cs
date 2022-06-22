@@ -8,7 +8,7 @@ public class Hunter_GFX : MonoBehaviour
     public AIPath aiPath;
     public Animator hunterAnimator;
     public Page_Counter script;
-    private int stage = 1;
+    public static int stage = 1;
 
     void Start()
     {
@@ -32,9 +32,11 @@ public class Hunter_GFX : MonoBehaviour
       }
       else if (script.pages <= 6){
         stage = 2;
+        Hunter_Behaviour.ntps = 0;
       }
       else {
         stage = 3;
+        Hunter_Behaviour.ntps = 0;
       }
     }
 

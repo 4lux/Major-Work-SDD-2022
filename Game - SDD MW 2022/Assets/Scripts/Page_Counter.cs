@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Page_Counter : MonoBehaviour
 {
@@ -23,6 +24,13 @@ public class Page_Counter : MonoBehaviour
     }
 
     // Update is called once per frame
+    void Update()
+    {
+      if (pages == 7)
+      {
+        SceneManager.LoadScene("Win Screen");
+      }
+    }
     public void AddPage()
     {
         pages += 1;

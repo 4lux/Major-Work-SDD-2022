@@ -48,6 +48,7 @@ public class Flashlight_Function : MonoBehaviour
       status = option;
       script.flStatus = option;
       flBox.enabled = option;
+
     }
 
 }
