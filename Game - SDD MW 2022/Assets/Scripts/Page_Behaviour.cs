@@ -19,20 +19,11 @@ public class Page_Behaviour : MonoBehaviour
         col = false;
     }
 
-    IEnumerator Grab()
-    {
-      Page_Counter.instance.AddPage();
-      pturn.Play();
-      yield return new WaitForSecondsRealtime(2);
-
-    }
-
     private void Update()
     {
       if ((Input.GetMouseButtonDown(1)) && (col == true))
       {
-        Debug.Log("bruh");
-        Grab();
+        Page_Counter.instance.AddPage();
         Paper.SetActive(false);
       }
     }
