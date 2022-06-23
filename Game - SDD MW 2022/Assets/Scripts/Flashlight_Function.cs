@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class Flashlight_Function : MonoBehaviour
 {
-    public UnityEngine.Rendering.Universal.Light2D fl;
-    public PolygonCollider2D flBox;
-    private bool status = true;
+    [SerializeField] private AudioSource click;             //Creates a field for the sound component to be connected
+    public UnityEngine.Rendering.Universal.Light2D fl;      //fl is the flashlight's state (on or off)
+    public PolygonCollider2D flBox;                         //f1Box is made the collider of the light
+    private bool status = true;                       
     public Battery_Health script;
 
     void Start()
@@ -34,10 +35,12 @@ public class Flashlight_Function : MonoBehaviour
     {
       if ((status == true) && (Input.GetMouseButtonDown(0)))
       {
+          click.Play();
           flashVariables(false);
       }
       else if ((status == false) && (Input.GetMouseButtonDown(0)))
       {
+          click.Play();
           flashVariables(true);
       }
     }

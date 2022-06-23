@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class Page_Behaviour : MonoBehaviour
 {
+    [SerializeField] private AudioSource pturn;
     bool col = false;
     public GameObject Paper;
-    [SerializeField] private AudioSource pturn;
+
 
     private void OnTriggerEnter2D(Collider2D Other)
     {
@@ -18,17 +19,23 @@ public class Page_Behaviour : MonoBehaviour
         col = false;
     }
 
+    IEnumerator Grab()
+    {
+      Page_Counter.instance.AddPage();
+      pturn.Play();
+      yield return new WaitForSecondsRealtime(2);
+
+    }
+
     private void Update()
     {
       if ((Input.GetMouseButtonDown(1)) && (col == true))
       {
+        Debug.Log("bruh");
+        Grab();
         Paper.SetActive(false);
-        pturn.Play();
-        Page_Counter.instance.AddPage();
       }
     }
-
-
 
 
 }

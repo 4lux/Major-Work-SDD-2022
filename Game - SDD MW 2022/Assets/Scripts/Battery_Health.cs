@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Battery_Health : MonoBehaviour
 {
-    public Animator batteryAnimator;
+    public Animator batteryAnimator;   //gets the location of the animation controller and nicks it "batteryAnimator"
 
-    public bool flStatus;
-    public int flLevel;
-    private float timeStart;
+    public bool flStatus;              //Status of the flashligh (is it off or on)
+    public int flLevel;                //The amount of battery the flashlight has (lower number = more power left)
+    private float timeStart;           //Timer for the battery
 
 
     // Start is called before the first frame update
@@ -21,17 +21,17 @@ public class Battery_Health : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        batteryLevelUpdate();
-        batteryAnimator.SetInteger("level", flLevel);
+        batteryLevelUpdate();                               //Updates the level of the battery based on time
+        batteryAnimator.SetInteger("level", flLevel);       //Changes the integer "level" in the animator controller which changes the animation
 
         if (flStatus == true)
         {
-          timeStart += Time.deltaTime;
+          timeStart += Time.deltaTime;                      //Adds time to timeStart if the flashlight (flStatus) is on
         }
     }
 
-    void batteryLevelUpdate()
-    {
+    void batteryLevelUpdate()                               //Increases the level of the battery every 30 seconds.
+    {                                                       //After 90s the light reaches level 3 and turns off
       if (timeStart <= 30)
       {
         flLevel = 0;
